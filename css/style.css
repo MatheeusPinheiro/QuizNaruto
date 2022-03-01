@@ -14,6 +14,7 @@
     background-image: url('../img/k.jpg');
     background-size: cover;
     background-position: bottom;
+    flex-direction: column;
 }
 
 .area{
@@ -25,7 +26,6 @@
     align-items: center;
     flex-direction: column;
     box-shadow: 0px 0px 10px orange;
-    border-radius: 20px;
 }
 
 .img{
@@ -84,7 +84,63 @@
 
 
 
+/* AREA DE PONTOS */
 
+.score{
+    width: 100%;
+    display: none;
+}
+
+.scoreArea {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image:linear-gradient(to top, rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../img/k.jpg');
+    background-position: left;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 20px #000;
+    max-width: 900px;
+    margin:auto;
+}
+
+.prizeImage {
+    width: auto;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.scoreText1 {
+    color: rgb(88, 236, 19);
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.scorePct {
+    color: #4ceb4c;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.scoreText2 {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.scoreArea button {
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #CCC;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.scoreArea button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
 
 
@@ -143,16 +199,19 @@
         height: 120px;
     }
 
-    .pergunta{
+    .area .pergunta{
         margin-top: 0;
-        font-size: 20px;
+        font-size: 22px;
     }
 
-    .area .opcao{
+    .opcoes .opcao{
         width: calc(100vw - 30px);
         font-size: 15px;
     }
     
+    .scoreArea{
+        height: 100vh;
+    }
 }
 
 
@@ -173,12 +232,15 @@
        margin-bottom: 20px;
    }
 
-   .pergunta{
+   .area .pergunta{
        margin-top: 0;
+       font-size: 27px;
    }
 
-   .area .opcao{
+   .area .opcoes .opcao{
        width: calc(100vw - 30px);
+       font-size: 18px;
+     
    }
    
 }
@@ -200,13 +262,20 @@
        margin-bottom: 20px;
    }
 
-   .pergunta{
-       margin-top: 0;
+   .area  .pergunta{
+       margin-top: 50px;
+       padding: 0 10px;
    }
 
-   .area .opcao{
+   .area .opcoes .opcao{
        width: calc(100vw - 30px);
+       font-size: 23px;
+       margin-bottom: 15px;
    }
+
+   .scoreArea{
+    height: 100vh;
+}
    
 }
 
@@ -237,5 +306,9 @@
        width: calc(100vw - 30px);
        font-size: 22px;
    }
+
+   .scoreArea{
+    height: 100vh;
+}
    
 }
