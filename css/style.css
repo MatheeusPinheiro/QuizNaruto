@@ -41,6 +41,9 @@
     animation: sharingan 7s infinite;
 }
 
+.acerto{
+   
+}
 
 .pergunta{
     font-size: 25px;
@@ -66,7 +69,7 @@
 }
 
 .opcao:hover{
-   background-color: rgba(199, 150, 17, 0.8);
+   background-color:  #53d653;
 }
 
 .opcao span{

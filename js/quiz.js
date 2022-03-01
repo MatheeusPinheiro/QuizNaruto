@@ -25,8 +25,9 @@
 
         document.querySelector('.opcoes').innerHTML = alternativasHtml;
 
+    
         document.querySelectorAll('.opcoes .opcao').forEach(item =>{
-            item.addEventListener('click', proximaPergunta);
+                item.addEventListener('click', proximaPergunta);
         });
 
 
@@ -40,7 +41,12 @@
 
     if(questoes[questaoAtual].resposta === proxima){
         perguntaCorreta++;
+        
     }
-    questaoAtual++;
-    mostrarPergunta();
+   
+    setTimeout(()=>{
+        questaoAtual++;
+        mostrarPergunta();
+    },2000)
+    
  }
