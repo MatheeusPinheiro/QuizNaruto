@@ -60,8 +60,8 @@
     if(pontos < 30){
         document.querySelector('.scoreText1').innerHTML = 'Você é fraco, te falta odio!!';
         document.querySelector('.scorePct').style.color = '#FF0000';
-        document.querySelector('.scoreArea img').src = '../img/itachi.png';
-    }else if(pontos >= 30 && pontos < 70) {
+        document.querySelector('.scoreArea img').src = 'img/itachi.png';
+    }else if(pontos >= 40 && pontos < 70) {
         document.querySelector('.scoreText1').innerHTML = 'Muito bom! Esse é seu jeito ninja :) ';
         document.querySelector('.scorePct').style.color = '#FFFF00';
     } else if(pontos >= 70) {
